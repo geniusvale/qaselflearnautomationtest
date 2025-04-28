@@ -28,7 +28,7 @@ class SauceDemoLoginPage:
     loginButton = driver.find_element(By.ID, "login-button")
 
     #Login Function
-    def test_login(self):
+    def login(self):
         self.usernameField.send_keys("standard_user")
         self.passwordField.send_keys("secret_sauce")
         self.loginButton.click()
@@ -39,13 +39,8 @@ class SauceDemoLoginPage:
             print("Login Failed")
         time.sleep(5)
         self.driver.close()
-    
-    def dummyTest(self):
-        pass
-    
-    assert True
 
     
 loginPage = SauceDemoLoginPage()
-loginPage.test_login()
+loginPage.login()
 loginPage.dummyTest()
