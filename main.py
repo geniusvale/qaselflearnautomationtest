@@ -9,11 +9,11 @@ class SauceDemoLoginPage:
     #Initiate Option for Edge Browser and add argument
     edgeOptions = Options()
     #edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
-    #edgeOptions.add_argument("--headless")
+    edgeOptions.add_argument("--headless")
 
     #Initiate WebDriver Instance
     driver = webdriver.Edge(
-        #options=edgeOptions,
+        options=edgeOptions,
     )
 
     saucedemourl = "https://www.saucedemo.com"
