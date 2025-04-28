@@ -40,5 +40,10 @@ class SauceDemoLoginPage:
         time.sleep(5)
         self.driver.close()
     
+    def dummyTest():
+        pass
+
+    
 loginPage = SauceDemoLoginPage()
 loginPage.login()
+loginPage.dummyTest()
