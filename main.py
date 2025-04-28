@@ -9,7 +9,7 @@ import time
 class SauceDemoLoginPage:
     #Initiate Option for Edge Browser and add argument
     edgeOptions = Options()
-    #edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
+    edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
     edgeOptions.add_argument("--headless")
 
     #Initiate WebDriver Instance
@@ -40,7 +40,7 @@ class SauceDemoLoginPage:
         time.sleep(5)
         self.driver.close()
     
-    def dummyTest():
+    def dummyTest(self):
         pass
 
     
