@@ -43,4 +43,3 @@ class SauceDemoLoginPage:
     
 loginPage = SauceDemoLoginPage()
 loginPage.login()
-loginPage.dummyTest()
