@@ -8,6 +8,7 @@ class SauceDemoLoginPage:
     #Initiate Option for Edge Browser and add argument
     edgeOptions = Options()
     edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
+    edgeOptions.add_argument("--headless")
 
     #Initiate WebDriver Instance
     driver = webdriver.Edge(
