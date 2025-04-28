@@ -1,20 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.edge.options import Options
+from selenium.webdriver.edge.service import Service
 
 import time
 
 class SauceDemoLoginPage:
     #Initiate Option for Edge Browser and add argument
-    chromeOptions = Options()
+    edgeOptions = Options()
     #edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
-    chromeOptions.add_argument("--headless")
+    edgeOptions.add_argument("--headless")
 
     #Initiate WebDriver Instance
-    driver = webdriver.Chrome(
-        options=chromeOptions,
+    driver = webdriver.Edge(
+        options=edgeOptions,
     )
 
     saucedemourl = "https://www.saucedemo.com"
