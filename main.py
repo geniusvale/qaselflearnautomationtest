@@ -1,11 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.edge.options import Options
 import time
 
 class SauceDemoLoginPage:
+    #Initiate Option for Edge Browser and add argument
+    edgeOptions = Options()
+    edgeOptions.add_argument("--edge-skip-compat-layer-relaunch")
+
     #Initiate WebDriver Instance
-    driver = webdriver.Edge()
+    driver = webdriver.Edge(
+        options=edgeOptions
+    )
 
     saucedemourl = "https://www.saucedemo.com"
 
